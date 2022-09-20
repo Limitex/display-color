@@ -43,7 +43,6 @@ document.body.addEventListener('click', (event) => {
             c.style.display = 'none';
             document.body.style.cursor = 'none';
         }
-
     }
 });
 
