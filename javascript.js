@@ -36,8 +36,14 @@ document.getElementById(FULL_SCREEN_BUTTON_ID).addEventListener('click', () => {
 document.body.addEventListener('click', (event) => {
     if (event['path'][0].tagName == 'BODY'){
         var c = document.getElementById(CONTENTS_ID);
-        if (c.style.display == 'none') c.style.display = '';
-        else c.style.display = 'none';
+        if (c.style.display == 'none') {
+            c.style.display = '';
+            document.body.style.cursor = '';
+        } else {
+            c.style.display = 'none';
+            document.body.style.cursor = 'none';
+        }
+
     }
 });
 
