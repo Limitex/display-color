@@ -34,7 +34,7 @@ document.getElementById(FULL_SCREEN_BUTTON_ID).addEventListener('click', () => {
 });
 
 document.body.addEventListener('click', (event) => {
-    if (event['path'][0].tagName == 'BODY'){
+    if (event.target.tagName == 'BODY'){
         var c = document.getElementById(CONTENTS_ID);
         if (c.style.display == 'none') {
             c.style.display = '';
